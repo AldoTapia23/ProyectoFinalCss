@@ -33,11 +33,20 @@ div nav.InputContenedor{
     /* border: 1px solid black; */
     padding-top: 8px;
     margin-left: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lupa{
+    width: 60px;
+    height: 23px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 input{
-    width: 400px;
+    width: 300px;
     height: 20px;
+    margin-right: 5px;
 }
 
 div.IconsHeader{
@@ -58,7 +67,7 @@ div.IconsHeader svg{
 }
 
 .menu{
-    border: 1px solid black;
+    border: 1px solid rgb(235, 225, 225, 0.8 );
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -109,5 +118,63 @@ div.articulos{
     background-color: rgb(125, 13, 204);
     border: 1px solid black;
     width: auto;
-    height: 440px;
+    height: auto;
+}
+
+div.productos-destacados{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+div.productos-ofertas{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+div.contenedor-productos{
+    background-color: white;
+    width: 160px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+img{
+    width: 80%;
+    height:60%;
+    margin-left: 15px;
+}
+
+h3{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+div.Destacado{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.Destacado label{
+    font-size: 12px;
+    color: crimson;
+}
+
+.contenedor-productos:hover{
+    scale: 1.1;
 }
