@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor{
+    width: 400px;
+    border-radius: 8px;
+    padding: 40px;
+    background-image: url(img/Fondo-estrellado);
+    background-size: cover;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+                0 5px 12px -2px rgba(0, 0, 0, 0.1),
+                0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .titulo{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 5px;
+    color: white;
+}
+
+.contenedor form input{
+    display: none;
+}
+
+.contenedor form .categoria{
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.categoria label{
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+label:nth-child(2), label:nth-child(3){
+    margin: 15px 0;
+}
+
+#visa:checked ~ .categoria .visaMethod,
+#mastercard:checked ~ .categoria .mastercardMethod,
+#paypal:checked ~ .categoria .paypalMethod,
+#OXXO:checked ~ .categoria .oxxoMethod{
+    box-shadow: 0px  0px 0px 1px #6064b6;
+}
+
+
+#visa:checked ~ .categoria .visaMethod .check,
+#mastercard:checked ~ .categoria .mastercardMethod .check,
+#paypal:checked ~ .categoria .paypalMethod .check,
+#OXXO:checked ~ .categoria .oxxoMethod .check{
+    display: block;
+}
+
+
+label .imgName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgName span{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.imgName .imgContainer{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
+
+.visa img{
+    width: 80px;
+    margin-left: 5px;
+}
+
+.mastercard img{
+    width: 65px;
+}
+
+.paypal img{
+    width: 70px;
+}
+
+.OXXO img{
+    width: 45px;
+}
+
+.check{
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.check i{
+    font-size: 18px;
+}
+
+.Next-button{
+    margin: 5px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+div.Next-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #6064b6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+.Next-button:hover{
+    scale: 1.01;
+}
