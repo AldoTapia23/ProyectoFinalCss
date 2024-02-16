@@ -161,7 +161,7 @@ div.productos-destacados{
 
 div.productos-ofertas{
     width: 100%;
-    height: auto;
+    height: 300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -216,9 +216,32 @@ div.Destacado label{
 }
 
 footer{
+    display: flex;
     background-color: rgb(75, 213, 255);
     width: 100%;
     height: 40px;
+}
+
+.footer{
+    width: 50%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes{
+    width: 50%;
+    height: 96%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes svg{
+    width: 20px;
+    height: 20px;
 }
 
 /* @media screen and (max-width: 1024px){
