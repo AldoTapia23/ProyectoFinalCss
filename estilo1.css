@@ -104,6 +104,7 @@ nav li a{
 
 .perfil-desplegable:hover .opciones{
     display: block;
+    gap: 15px;
 }
 
 .categorias{
