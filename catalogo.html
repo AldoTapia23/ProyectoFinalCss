@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="estilo1.css">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="estilo2.css">
 </head>
 <body>
     <header>
@@ -43,7 +43,7 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="">Inicio</a>
+                <a href="index.html">Inicio</a>
             </li>
             <li class="submenu">
                 <label>Categorias</label>
@@ -57,7 +57,7 @@
                 </div>
             </li>
             <li>
-               <a href="catalogo.html">Catalogo</a> 
+               <a href="#">Catalogo</a> 
             </li>
             <li>
                 <a href="">Contacto</a>
@@ -65,7 +65,19 @@
         </ul>
     </nav>
     <div class="articulos">
-        <div class="titulo-destacado"><h2>Destacados</h2></div>
+        <div class="titulo-destacado">
+            <div class="barra-filtro">
+                <select name="filtro" id="filtro">
+                    <option value="todo">todo</option>
+                <option value="marca">marca</option>
+                <option value="precio-alto">precio alto</option>
+                <option value="precio-bajo">precio bajo</option>
+                <option value="monitor">monitor</option>
+                <option value="pantalla">pantalla</option>
+            </select>
+        </div>
+            <div class="titulo-catalogo"><h2>Catalogo</h2></div>
+        </div>
         <div class="productos-destacados">
             <a href="">
             <div class="contenedor-productos">
@@ -76,6 +88,10 @@
                     <div class="Destacado">
                         <label for="">Destacado</label>
                         <label for="">RD $208 751.25</label>
+                    </div>
+                    <div class="botones-compra">
+                        <a href="">Añadir al carrito</a>
+                        <a href="">Detalles</a>
                     </div>
             </div>
             </a> 
@@ -88,6 +104,10 @@
                         <label for="">Destacado</label>
                         <label for="">RD $64 461.26</label>
                     </div>  
+                    <div class="botones-compra">
+                        <a href="">Añadir al carrito</a>
+                        <a href="">Detalles</a>
+                    </div>
             </div>
             </a>  
             <a href="">
@@ -97,7 +117,11 @@
                     <div class="Destacado">
                         <label for="">Destacado</label>
                         <label for="">RD $14 956.30</label>
-                    </div> 
+                    </div>
+                    <div class="botones-compra">
+                        <a href="">Añadir al carrito</a>
+                        <a href="">Detalles</a>
+                    </div>
             </div>
             </a>  
             <a href="">
@@ -109,10 +133,14 @@
                         <label for="">Destacado</label>
                         <label for="">RD $65 861.21</label>
                     </div>
+                    <div class="botones-compra">
+                        <a href="">Añadir al carrito</a>
+                        <a href="">Detalles</a>
+                    </div>
             </div>
             </a> 
         </div>
-        <div class="titulo-destacado"><h2>Ofertas</h2></div>
+        <!-- <div class="titulo-destacado"><h2>Ofertas</h2></div> -->
         <div class="productos-ofertas">
             <a href="">
             <div class="contenedor-productos">
@@ -124,6 +152,10 @@
                             <label for="">RD $7 775.04</label> 
                             <label for="" class="tachado">RD $11 775.04</label>   
                         </div>
+                    </div>
+                    <div class="botones-compra">
+                        <a href="">Añadir al carrito</a>
+                        <a href="">Detalles</a>
                     </div>
             </div>
             </a>
@@ -138,6 +170,10 @@
                         <label for="" class="tachado">RD $4 100.18</label>   
                     </div>
                 </div>
+                <div class="botones-compra">
+                    <a href="">Añadir al carrito</a>
+                    <a href="">Detalles</a>
+                </div>
             </div>
             </a>
             <a href="">
@@ -151,6 +187,10 @@
                         <label for="" class="tachado">RD $13 965.12</label>   
                     </div>
                 </div>
+                <div class="botones-compra">
+                    <a href="">Añadir al carrito</a>
+                    <a href="">Detalles</a>
+                </div>
             </div>
             </a>
             <a href="">
@@ -163,6 +203,10 @@
                         <label for="">RD $3 879.32</label> 
                         <label for="" class="tachado">RD $5 879.32</label>   
                     </div>
+                </div>
+                <div class="botones-compra">
+                    <a href="">Añadir al carrito</a>
+                    <a href="">Detalles</a>
                 </div>
             </div>
             </a>
