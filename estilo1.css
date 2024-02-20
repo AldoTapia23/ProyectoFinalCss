@@ -292,6 +292,30 @@ div.boton-compra a{
     color: black;
     box-shadow: 1px 1px 1px 1px;
 }
+
+.contenedor-primario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+    height: 550px;
+    border: 1px solid black;
+    background-color: rgb(125, 13, 204);
+}
+
+div.fotos-articulo img{
+    width: 180px;
+    height: 180px;
+}
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+}
 /* @media screen and (max-width: 1024px){
    html{
     flex-direction: column;
