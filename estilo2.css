@@ -274,7 +274,13 @@ div.articulos select{
 }
 
 div.barra-filtro{
-    margin-right: 550px;
+    margin-right: 600px;
+}
+
+button{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(75, 213, 255);
 }
 
 /* @media screen and (max-width: 1024px){
