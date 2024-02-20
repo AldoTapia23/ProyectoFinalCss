@@ -269,7 +269,8 @@ div.botones-compra a{
 }
 
 div.articulos select{
-    height: 20px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 div.barra-filtro{
